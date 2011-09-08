@@ -1,0 +1,31 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require pages
+*/
+@import "blueprint/reset";
+@import "base";
+@include blueprint;
+
+body{
+  background: #333333 url("bg.png");
+  #body_wrapper{
+    margin: 0px auto;
+    min-width: 960px;
+    max-width: 1920px;
+    min-height: 600px;
+  }
+}
+
+#loading{
+  display: none;
+  @include border-radius(10px);
+  position: relative;
+  background: #000000;
+  width: 600px;
+  height: 10px;
+  margin: 0px auto;
+  margin-top: 300px;
+}

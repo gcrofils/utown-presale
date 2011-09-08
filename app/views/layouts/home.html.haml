@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %title UTown
+    = stylesheet_link_tag    "home" 
+    = javascript_include_tag "home" 
+    = csrf_meta_tags 
+
+  %body
+    #body_wrapper
+      = yield
+      #loading

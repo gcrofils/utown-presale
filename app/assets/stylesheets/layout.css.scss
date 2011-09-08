@@ -1,0 +1,24 @@
+html{
+  height: 100%;
+}
+body{
+  background: #000000;
+  height: 100%;
+  
+  #body_wrapper{
+    margin: 0px auto;
+    max-width: 1920px;
+    min-height: 700px;
+    max-height: 1080px;
+    background: url("mall1.jpg") #EEEEEE center;
+    height: 100%;
+    
+    #header{
+      background: #333333;
+      opacity: 0.8;
+      width: 600px;
+      height: 80px;
+      float: right;
+    }
+  }
+}

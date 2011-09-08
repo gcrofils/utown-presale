@@ -1,0 +1,56 @@
+
+@import "base";
+
+#logo{
+  margin: 15px 0px 0px 60px;
+}
+#g-nav{
+  width: 300px;
+  ul{
+    list-style-type: none;
+    margin: 20px 0px 0px 10px;
+    padding: 0px;
+  }
+  ul li a{
+    display: block;
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    @include box-shadow();
+    span{position:relative; top:-6px; margin-left:3px;}
+    &#home{background: #E42B16;
+      &:hover{background: darken(#E42B16, 10%); color: #000000;}
+    }
+    &#event{background: #EA7C13;
+      &:hover{background: darken(#EA7C13, 10%); color: #000000;}
+    }
+    &#chao{background: #6FA944;
+      &:hover{background: darken(#6FA944, 10%); color: #000000;}
+    }
+    &#nav{background: #D3192B;
+      &:hover{background: darken(#D3192B, 10%); color: #000000;}
+    }
+    &#member{background: #5982C2;
+      &:hover{background: darken(#5982C2, 10%); color: #000000;}
+    }
+    &#business{background: #AD67A7;
+      &:hover{background: darken(#AD67A7, 10%); color: #000000;}
+    }
+    &#service{background: #ED861F;
+      &:hover{background: darken(#ED861F, 10%); color: #000000;}
+    }
+  }
+}
+
+#footer{
+  position: fixed;
+  height: 200px;
+  width: 1920px;
+  bottom: -160px;
+  background: #333333;
+  @include box-shadow();
+}
