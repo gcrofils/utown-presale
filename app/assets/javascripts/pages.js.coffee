@@ -44,7 +44,7 @@ $ ->
           back_state($(this))
       $("li a").attr("current", "false")
       $(this).attr("current", "true")
-      bg_img = "/assets/#{$(this).attr('id')}.png"
+      bg_img = "/assets/#{$(this).attr('id')}.jpg"
       $("#slide_bg").fadeOut("slow", ->
         $("#slide_bg").css("background", "url(#{bg_img}) center no-repeat")
         $("#slide_bg").fadeIn("slow")
