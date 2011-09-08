@@ -57,10 +57,21 @@
 
 #footer{
   position: fixed;
-  height: 200px;
   width: 1920px;
   bottom: -160px;
   background: #333333;
   @include opacity(0.9);
   @include box-shadow();
+  ul{list-style-type:none; margin:0px; padding:0px;}
+  ul li{
+    float: left;
+  }
+  .event{
+    height: 194px;
+    width: 100px;
+    margin-top: 3px;
+    padding: 3px;
+    background: #EEEEEE;
+    margin-right: 3px;
+  }
 }
