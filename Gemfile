@@ -19,10 +19,13 @@ group :assets do
   gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 end
 
+
+
 gem 'jquery-rails'
 
 group :production do
   gem 'pg'
+  gem 'therubyracer-heroku'
 end
 
 
