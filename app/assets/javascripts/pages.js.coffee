@@ -13,7 +13,7 @@ $ ->
       , 
       ->
         $(this).stop(true, false).animate({
-          width : "250px",
+          width : "260px",
           opacity : "0.9",
           height : "39px"
         }, "fast")

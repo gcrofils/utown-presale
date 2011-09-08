@@ -1,14 +1,23 @@
 
 @import "base";
 
+#header{
+  background: #333333;
+  #content{
+    padding: 5px;
+    width: 960px;
+    margin: 0px auto;
+  }
+}
+
 #logo{
-  margin: 15px 0px 0px 60px;
+  
 }
 #g-nav{
   width: 300px;
   ul{
     list-style-type: none;
-    margin: 20px 0px 0px 10px;
+    margin: 15px 0px 0px 10px;
     padding: 0px;
   }
   ul li a{
@@ -19,7 +28,7 @@
     color: #222222;
     font-weight: bold;
     margin-bottom: 10px;
-    opacity: 0.9;
+    @include opacity(0.9);
     @include box-shadow();
     span{position:relative; top:-6px; margin-left:3px;}
     &#home{background: #E42B16;
@@ -52,5 +61,6 @@
   width: 1920px;
   bottom: -160px;
   background: #333333;
+  @include opacity(0.9);
   @include box-shadow();
 }
