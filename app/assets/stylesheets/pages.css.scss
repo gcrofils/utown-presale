@@ -2,25 +2,39 @@
 @import "base";
 
 #header{
-  background: #333333;
+  background: #222222;
+  @include opacity(0.9);
   #content{
     padding: 5px;
-    width: 960px;
     margin: 0px auto;
   }
 }
 
 #logo{
-  
+  float: left;
+  margin: 3px 20px 0px 20px;
+}
+#links{
+  float: right;
+  a{text-decoration: none;
+    &:hover{text-decoration: underline;}
+  }
+  margin: 10px 20px 0px 20px;
+}
+#search{
+  float: right;
+  width: 150px;
 }
 #g-nav{
   width: 300px;
+  float: left;
   ul{
     list-style-type: none;
     margin: 15px 0px 0px 10px;
     padding: 0px;
   }
   ul li a{
+    z-index: 2000;
     display: block;
     padding: 10px 20px 10px 10px;
     text-decoration: none;
@@ -31,6 +45,15 @@
     @include opacity(0.9);
     @include box-shadow();
     span{position:relative; top:-6px; margin-left:3px;}
+    .desc{
+      display: none; 
+      font-size: 14px; 
+      font-weight: normal; 
+      background: #333333; 
+      color: #FFFFFF;
+      padding: 5px 10px;
+      @include border-radius(30px);
+    }
     &#home{background: #E42B16;
       &:hover{background: darken(#E42B16, 10%); color: #000000;}
     }
@@ -49,29 +72,60 @@
     &#business{background: #AD67A7;
       &:hover{background: darken(#AD67A7, 10%); color: #000000;}
     }
-    &#service{background: #ED861F;
-      &:hover{background: darken(#ED861F, 10%); color: #000000;}
+    &#service{background: #D6BB1D;
+      &:hover{background: darken(#D6BB1D, 10%); color: #000000;}
     }
   }
 }
-
+#weibo{
+  position: relative;
+  background: #EEEEEE;
+  width: 250px;
+  float: right;
+  padding: 6px 3px 3px 3px;
+  margin: 30px 10px 0px 0px;
+  @include border-radius(5px);
+  #weibo_title{
+    position: absolute;
+    left: 90px;
+    top: -22px;
+    font-size: 14px;
+    background: #EEEEEE;
+    color: #333333;
+    padding: 3px 5px;
+    @include border-radius(5px);
+  }
+  ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    li{
+      img{float:left; margin: 0px 12px 0px 0px;}
+      .w_content{padding:3px;}
+      margin-bottom: 3px;
+      background: #333333;
+      padding:5px;
+      @include border-radius(5px);
+    }
+  }
+}
 #footer{
+  overflow: hidden;
   position: fixed;
   width: 1920px;
   bottom: -160px;
   background: #333333;
   @include opacity(0.9);
   @include box-shadow();
-  ul{list-style-type:none; margin:0px; padding:0px;}
+  ul{list-style-type:none; margin:0px; padding:0px; width: 3000px;}
   ul li{
     float: left;
   }
   .event{
     height: 194px;
-    width: 100px;
-    margin-top: 3px;
+    width: 300px;
+    margin: 3px;
     padding: 3px;
-    background: #EEEEEE;
-    margin-right: 3px;
+    background: #222222;
   }
 }

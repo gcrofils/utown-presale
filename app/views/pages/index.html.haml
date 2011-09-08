@@ -1,6 +1,13 @@
 #header
   #content
     #logo= image_tag "logo3.png", :height => 30
+    #search
+      = text_field_tag "search"
+    #links
+      = link_to "登录", "#"
+      &nbsp;|&nbsp;
+      = link_to "注册", "#"
+    .clear
 
 #g-nav
   %ul
@@ -8,48 +15,82 @@
       %a{:href =>"#", :id => "home"}
         = image_tag "icons/home.png"
         %span 首页
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "event"}
         = image_tag "icons/event.png"
         %span 活动资讯
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "chao"}
         = image_tag "icons/chao.png"
         %span 潮人地带
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "nav"}
         = image_tag "icons/nav.png"
         %span 购物导航
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "member"}
         = image_tag "icons/member.png"
         %span 会员私享
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "business"}
         = image_tag "icons/business.png"
         %span 商业合作
+        .desc 一些关于此项的说明，一些简单的说明
     %li
       %a{:href =>"#", :id => "service"}
         = image_tag "icons/service.png"
         %span 在线服务
-#footer
+        .desc 一些关于此项的说明，一些简单的说明
+#weibo
+  #weibo_title 即时微博
   %ul
     %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
     %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
     %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
     %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
     %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
     %li
-      .event
-    %li
-      .event
-    %li
-      .event
-    %li
-      .event
+      .w_content
+        = image_tag "head.jpg", :width => 50
+        一些微博消息一些微博消息一些微博消息一些微博消息一些微博消息
+      .clear
+
+#footer
+  %ul
+    %li.event
+    %li.event
+    %li.event
+    %li.event
+    %li.event
+    %li.event
+    %li.event
+    %li.event
+    %li.event
   
