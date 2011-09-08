@@ -20,9 +20,3 @@ end
 
 gem 'jquery-rails'
 
-group :production do
-  gem 'pg'
-  gem 'therubyracer-heroku'
-  gem "fog"
-end
-

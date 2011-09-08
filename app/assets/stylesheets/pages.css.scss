@@ -113,7 +113,7 @@
   overflow: hidden;
   position: fixed;
   width: 1920px;
-  bottom: -160px;
+  bottom: -140px;
   background: #333333;
   @include opacity(0.9);
   @include box-shadow();
@@ -122,10 +122,11 @@
     float: left;
   }
   .event{
-    height: 194px;
-    width: 300px;
+    height: 174px;
+    width: 230px;
     margin: 3px;
-    padding: 3px;
+    padding: 13px;
     background: #222222;
+    img{float: left; margin-right: 20px;}
   }
 }
